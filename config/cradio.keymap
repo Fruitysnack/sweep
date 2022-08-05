@@ -14,7 +14,6 @@
     #define EXT 1
     #define SYM 2
 	#define SETTINGS 3
-
 	
 &mt {
   //  flavor = "tap-preferred";
