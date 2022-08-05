@@ -62,7 +62,7 @@
 		sym_layer {
 		bindings = <
 		&kp DE_LCBR  &kp DE_RCBR &kp DE_QUOT  &kp DE_DQUO  &kp DE_SECT    			&kp ESC  &kp TAB &kp DE_CIRC &kp DE_ACUT &kp DE_GRV 
-		&kp DE_LBRC  &kp DE_RBRC  &kp DE_DLR  &kp DE_PERC  &kp DE_AMPR 				&kp ALT &kp LWIN  &kp LSHFT  &kp LCTRL   &kp RALT
+		&kp DE_LBRC  &kp DE_RBRC  &kp DE_DLR  &kp DE_PERC  &kp DE_AMPR 				&kp LALT &kp LWIN  &kp LSHFT  &kp LCTRL   &kp RALT
 		&kp DE_LABK  &kp DE_RABK  &kp DE_SLSH  &kp DE_DEG   &kp DE_UNDS    			&kp DE_TILD  &kp DE_BSLS  &kp DE_PIPE  &kp DE_HASH   &kp DEL
 					  &none &none  							&none  &trans 
 		>;
