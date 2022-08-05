@@ -7,8 +7,18 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "german.keycodes"
 
+// Layer definitions
+    #define BASE 0
+    #define SYM 1
+    #define EXT 2
+    #define FNC 3
+    #define SYM2 4
+    #define ACCENT 5
+	#define SETTINGS 6
 
+	
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
@@ -62,11 +72,12 @@
         keymap {
                 compatible = "zmk,keymap";
                 
+       // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
+		&kp DE_Q &kp DE_W &kp DE_E &kp DE_R &kp DE_T 						&kp DE_Z &kp DE_U  &kp DE_I    &kp DE_O   &kp DE_P 
+		&kp DE_A &kp DE_S &kp DE_D &kp DE_F &kp DE_G 			        	        &kp DE_H &kp DE_J &kp DE_K &kp DE_L &kp QUOT
+		&kp DE_Y &kp DE_X &kp DE_C &kp DE_V &kp DE_B				        &kp DE_N &kp DE_M  &kp DE_COMM &kp DE_DOT &mt LSFT RET
           				&mo 1 &kp LCTL  				&kp SPC &mo 2 
 		>;
 		};
