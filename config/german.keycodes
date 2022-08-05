@@ -15,13 +15,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-#pragma once
-
-#include "keymap.h"
-
-// clang-format off
-
 /*
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
  * │ ^ │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ß │ ´ │       │
@@ -36,57 +29,57 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define DE_CIRC KC_GRV  // ^ (dead)
-#define DE_1    KC_1    // 1
-#define DE_2    KC_2    // 2
-#define DE_3    KC_3    // 3
-#define DE_4    KC_4    // 4
-#define DE_5    KC_5    // 5
-#define DE_6    KC_6    // 6
-#define DE_7    KC_7    // 7
-#define DE_8    KC_8    // 8
-#define DE_9    KC_9    // 9
-#define DE_0    KC_0    // 0
-#define DE_SS   KC_MINS // ß
-#define DE_ACUT KC_EQL  // ´ (dead)
+#define DE_CIRC GRAVE  // ^ (dead)
+#define DE_1    N1    // 1
+#define DE_2    N2    // 2
+#define DE_3    N3    // 3
+#define DE_4    N4    // 4
+#define DE_5    N5    // 5
+#define DE_6    N6    // 6
+#define DE_7    N7    // 7
+#define DE_8    N8    // 8
+#define DE_9    N9    // 9
+#define DE_0    N0    // 0
+#define DE_SS   MINUS // ß
+#define DE_ACUT KP_EQUAL  // ´ (dead)
 // Row 2
-#define DE_Q    KC_Q    // Q
-#define DE_W    KC_W    // W
-#define DE_E    KC_E    // E
-#define DE_R    KC_R    // R
-#define DE_T    KC_T    // T
-#define DE_Z    KC_Y    // Z
-#define DE_U    KC_U    // U
-#define DE_I    KC_I    // I
-#define DE_O    KC_O    // O
-#define DE_P    KC_P    // P
-#define DE_UDIA KC_LBRC // Ü
-#define DE_PLUS KC_RBRC // +
+#define DE_Q    Q    // Q
+#define DE_W    W    // W
+#define DE_E    E    // E
+#define DE_R    R    // R
+#define DE_T    T    // T
+#define DE_Z    Y    // Z
+#define DE_U    U    // U
+#define DE_I    I    // I
+#define DE_O    O    // O
+#define DE_P    P    // P
+#define DE_UDIA LBRC // Ü
+#define DE_PLUS RBRC // +
 // Row 3
-#define DE_A    KC_A    // A
-#define DE_S    KC_S    // S
-#define DE_D    KC_D    // D
-#define DE_F    KC_F    // F
-#define DE_G    KC_G    // G
-#define DE_H    KC_H    // H
-#define DE_J    KC_J    // J
-#define DE_K    KC_K    // K
-#define DE_L    KC_L    // L
-#define DE_ODIA KC_SCLN // Ö
-#define DE_ADIA KC_QUOT // Ä
-#define DE_HASH KC_NUHS // #
+#define DE_A    A    // A
+#define DE_S    S    // S
+#define DE_D    D    // D
+#define DE_F    F    // F
+#define DE_G    G    // G
+#define DE_H    H    // H
+#define DE_J    J    // J
+#define DE_K    K    // K
+#define DE_L    L    // L
+#define DE_ODIA SEMI // Ö
+#define DE_ADIA SQT // Ä
+#define DE_HASH NON_US_HASH // #
 // Row 4
-#define DE_LABK KC_NUBS // <
-#define DE_Y    KC_Z    // Y
-#define DE_X    KC_X    // X
-#define DE_C    KC_C    // C
-#define DE_V    KC_V    // V
-#define DE_B    KC_B    // B
-#define DE_N    KC_N    // N
-#define DE_M    KC_M    // M
-#define DE_COMM KC_COMM // ,
-#define DE_DOT  KC_DOT  // .
-#define DE_MINS KC_SLSH // -
+#define DE_LABK NON_US_BSLH // <
+#define DE_Y    Z    // Y
+#define DE_X    X    // X
+#define DE_C    C    // C
+#define DE_V    V    // V
+#define DE_B    B    // B
+#define DE_N    N    // N
+#define DE_M    M    // M
+#define DE_COMM COMMA // ,
+#define DE_DOT  DOT  // .
+#define DE_MINS KP_SLASH // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -102,28 +95,28 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define DE_DEG  S(DE_CIRC) // °
-#define DE_EXLM S(DE_1)    // !
-#define DE_DQUO S(DE_2)    // "
-#define DE_SECT S(DE_3)    // §
-#define DE_DLR  S(DE_4)    // $
-#define DE_PERC S(DE_5)    // %
-#define DE_AMPR S(DE_6)    // &
-#define DE_SLSH S(DE_7)    // /
-#define DE_LPRN S(DE_8)    // (
-#define DE_RPRN S(DE_9)    // )
-#define DE_EQL  S(DE_0)    // =
-#define DE_QUES S(DE_SS)   // ?
-#define DE_GRV  S(DE_ACUT) // ` (dead)
+#define DE_DEG  LS(DE_CIRC) // °
+#define DE_EXLM LS(DE_1)    // !
+#define DE_DQUO LS(DE_2)    // "
+#define DE_SECT LS(DE_3)    // §
+#define DE_DLR  LS(DE_4)    // $
+#define DE_PERC LS(DE_5)    // %
+#define DE_AMPR LS(DE_6)    // &
+#define DE_SLSH LS(DE_7)    // /
+#define DE_LPRN LS(DE_8)    // (
+#define DE_RPRN LS(DE_9)    // )
+#define DE_EQL  LS(DE_0)    // =
+#define DE_QUES LS(DE_SS)   // ?
+#define DE_GRV  LS(DE_ACUT) // ` (dead)
 // Row 2
-#define DE_ASTR S(DE_PLUS) // *
+#define DE_ASTR LS(DE_PLUS) // *
 // Row 3
-#define DE_QUOT S(DE_HASH) // '
+#define DE_QUOT LS(DE_HASH) // '
 // Row 4
-#define DE_RABK S(DE_LABK) // >
-#define DE_SCLN S(DE_COMM) // ;
-#define DE_COLN S(DE_DOT)  // :
-#define DE_UNDS S(DE_MINS) // _
+#define DE_RABK LS(DE_LABK) // >
+#define DE_SCLN LS(DE_COMM) // ;
+#define DE_COLN LS(DE_DOT)  // :
+#define DE_UNDS LS(DE_MINS) // _
 
 /* AltGr symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -139,17 +132,17 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define DE_SUP2 ALGR(DE_2)    // ²
-#define DE_SUP3 ALGR(DE_3)    // ³
-#define DE_LCBR ALGR(DE_7)    // {
-#define DE_LBRC ALGR(DE_8)    // [
-#define DE_RBRC ALGR(DE_9)    // ]
-#define DE_RCBR ALGR(DE_0)    // }
-#define DE_BSLS ALGR(DE_SS)   // (backslash)
+#define DE_SUP2 RALT(DE_2)    // ²
+#define DE_SUP3 RALT(DE_3)    // ³
+#define DE_LCBR RALT(DE_7)    // {
+#define DE_LBRC RALT(DE_8)    // [
+#define DE_RBRC RALT(DE_9)    // ]
+#define DE_RCBR RALT(DE_0)    // }
+#define DE_BSLS RALT(DE_SS)   // (backslash)
 // Row 2
-#define DE_AT   ALGR(DE_Q)    // @
-#define DE_EURO ALGR(DE_E)    // €
-#define DE_TILD ALGR(DE_PLUS) // ~
+#define DE_AT   RALT(DE_Q)    // @
+#define DE_EURO RALT(DE_E)    // €
+#define DE_TILD RALT(DE_PLUS) // ~
 // Row 4
-#define DE_PIPE ALGR(DE_LABK) // |
-#define DE_MICR ALGR(DE_M)    // µ
+#define DE_PIPE RALT(DE_LABK) // |
+#define DE_MICR RALT(DE_M)    // µ
