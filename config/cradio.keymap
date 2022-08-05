@@ -28,42 +28,12 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-        
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-        
-                    combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-        
-                           combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-        
-        
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
+        // both left thumb keys
+	combo_settings {
+			timeout-ms = <300>;
+			key-positions = <30 31>;
+			bindings = <&mo SETTINGS>;
+				};
         
 
         
@@ -76,9 +46,9 @@
        		default_layer {
 		bindings = <
 		&kp DE_Q &kp DE_W &kp DE_E &kp DE_R &kp DE_T 						&kp DE_Z &kp DE_U  &kp DE_I    &kp DE_O   &kp DE_P 
-		&kp DE_A &kp DE_S &kp DE_D &kp DE_F &kp DE_G 			        	        &kp DE_H &kp DE_J &kp DE_K &kp DE_L &kp QUOT
-		&kp DE_Y &kp DE_X &kp DE_C &kp DE_V &kp DE_B				        &kp DE_N &kp DE_M  &kp DE_COMM &kp DE_DOT &mt LSFT RET
-          				&mo 1 &kp LCTL  				&kp SPC &mo 2 
+		&kp DE_A &kp DE_S &kp DE_D &kp DE_F &kp DE_G 			        	        &kp DE_H &kp DE_J &kp DE_K &kp DE_L &kp LCTRL
+		&kp DE_Y &kp DE_X &kp DE_C &kp DE_V &kp DE_B				      		&kp DE_N &kp DE_M  &kp DE_COMM &kp DE_DOT &kp BSPC
+          				&mo EXT &kp LSHIFT  						&kp SPC &mo SYM
 		>;
 		};
 
